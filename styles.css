@@ -1,0 +1,277 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #fff;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: rgb(13, 177, 196);
+}
+a:hover {
+  color: #999;
+}
+
+.credits a {
+  color: #999;
+}
+
+.credits a:hover {
+  color: rgb(13, 177, 196);
+}
+
+.contact-us {
+  padding-top: 4rem;
+}
+
+
+
+/* Section Styles */
+/* z-index from https://developer.mozilla.org/en-US/docs/Web/CSS/z-index */
+
+.main-nav {
+  width: 100%;
+  z-index: 1;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+  color: #999;
+}
+.nav a:hover {
+  color: rgb(13, 177, 196);
+}
+
+header {
+  text-align: center;
+  background: url('images/hand-painter-colors-watercolor-stain-texture-background_1017-23842.jpg') no-repeat top center ;
+  background-size: 650px;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.exp {
+  background: url(images/astrosurf.jpg) no-repeat top right;
+}
+
+.secret {
+  color: #fff;
+}
+
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid rgb(13, 177, 196);
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2);
+}
+.tag {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+
+.tag:hover {
+  transform: scale(1.2) rotate(-5deg);
+  background-color: rgb(13, 177, 196);
+}
+
+.location {
+  background-color: #222;
+  color: #fff;
+}
+
+.location:hover{
+  color: #222
+}
+
+ul.hobbies {
+  padding: 0;
+  text-align: center;
+}
+
+.hobbies li {
+  border-radius: 6px;
+  display: inline-block;
+  background: rgb(13, 177, 196);
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.hobbies li:nth-child(odd) {
+  background: #999;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
+div.card-2 {
+  position: relative;
+  margin: 30px;
+  padding: 0;
+  max-width: 700px;
+  text-align: left;
+  background: #fff;
+  border-radius: 1px;
+}
+
+div.card-2 h1 {
+padding-top: 2rem;
+}
+
+/* BEGIN CLICKABLE DIV.CARD, extra note and credits are below*/
+
+section.card {
+  position: relative;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid rgb(13, 177, 196);
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+section.card:hover {
+  cursor: pointer;
+  border-color: #999;
+  filter: drop-shadow(0 0 1rem #999);
+  /* filter: drop-shadow from https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow() */
+}
+
+a.sectionLink {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   text-decoration: none;
+   /* Makes sure the link doesn't get underlined */
+   z-index: 10;
+   background-color: white;
+   opacity: 0;
+}
+/* clickable divLink by  Amit Agarwal from https://www.labnol.org/code/19639-turn-div-clickable-link*/
+
