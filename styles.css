@@ -233,6 +233,7 @@ div.card-2 {
   max-width: 700px;
   text-align: left;
   border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 div.card-2 h1 {
