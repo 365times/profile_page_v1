@@ -83,6 +83,7 @@ header {
 
 .exp {
   background: url(images/astrosurf.jpg) no-repeat top right;
+  opacity: 0.5;
 }
 
 .secret {
