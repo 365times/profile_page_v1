@@ -226,7 +226,7 @@ a.social:hover {
 
 }
 
-div.card-2 {
+section.card-2 {
   position: relative;
   margin: 30px;
   padding: 0;
@@ -236,11 +236,11 @@ div.card-2 {
   background-color: rgba(0, 0, 0, 0);
 }
 
-div.card-2 h1 {
+section.card-2 h1 {
 padding-top: 2rem;
 }
 
-/* BEGIN CLICKABLE DIV.CARD, extra note and credits are below*/
+/* BEGIN CLICKABLE SECTION.CARD, extra note and credits are below*/
 
 section.card {
   position: relative;
@@ -273,5 +273,5 @@ a.sectionLink {
    background-color: white;
    opacity: 0;
 }
-/* clickable divLink by  Amit Agarwal from https://www.labnol.org/code/19639-turn-div-clickable-link*/
+/* clickable sectionLink by  Amit Agarwal from https://www.labnol.org/code/19639-turn-div-clickable-link*/
 
